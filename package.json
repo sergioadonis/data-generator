@@ -1,0 +1,21 @@
+{
+  "name": "data-generator",
+  "version": "1.0.0",
+  "description": "CLI to generate random data files for development tests.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data-generate",
+    "cli"
+  ],
+  "author": "Sergio Adonis",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "commander": "^2.20.0",
+    "json2csv": "^4.5.1",
+    "moment": "^2.24.0"
+  }
+}
