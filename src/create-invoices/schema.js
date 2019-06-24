@@ -2,11 +2,11 @@ const Joi = require('@hapi/joi');
 
 
 const schema = Joi.object().keys({
-    first: Joi.number().integer().positive().required(),
-    last: Joi.number().integer().positive().required(),
+    firstNumber: Joi.number().integer().positive().required(),
+    lastNumber: Joi.number().integer().positive().required(),
     minDate: Joi.date().iso().required(),
     maxDate: Joi.date().iso().required(),
-    serie: Joi.string().alphanum().trim().max(20)
+    serie: Joi.string().trim().max(20)
 });
 
 

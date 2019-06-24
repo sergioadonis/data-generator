@@ -1,5 +1,7 @@
 {
   "name": "data-generator",
+  "preferGlobal": true,
+  "bin": "./src/program.js",
   "version": "1.0.0",
   "description": "CLI to generate random data files for development tests.",
   "main": "src/index.js",
