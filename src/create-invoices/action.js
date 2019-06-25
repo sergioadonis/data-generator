@@ -9,10 +9,9 @@ const action = (options) => {
     if (!result.error) {
         const json = generateInvoices(result.values);
         const name = options.filename || `invoices-data.csv`;
-        const headers = ['serie', 'number', 'date'];
         
         return saveInvoices({
-            filename: name, data: json, headers
+            filename: name, data: json
         });
     }
     

@@ -1,10 +1,15 @@
 const fs = require("fs");
 const { parseAsync } = require("json2csv");
 
-const saveInvoices = ({filename, data, headers}) => {
-    const opt = {
-        fields: headers
-    };
+const saveInvoices = ({filename, data}) => {
+    if (data.length == 0) {
+        const error = 'No data';
+        return {error}
+    }
+    
+    const first = data[0];
+    const fields = Object.keys(first).map(k => k);
+    const opt = {fields};
     
     parseAsync(data, opt)
         .then(csv => {

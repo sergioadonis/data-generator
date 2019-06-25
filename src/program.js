@@ -12,7 +12,6 @@ program
     .option('-l, --lastNumber <lastNumber>', 'The last number')
     .option('-m, --minDate <minDate>', 'The minimun date')
     .option('-M, --maxDate <maxDate>', 'The maximun date')
-    .option('-s, --serie <serie>', 'The serie')
     .alias('ci')
     .description('Create invoices to filename in CSV format. Default filename is invoices-data.csv')
     .action((filename, options) => createInvoice({filename, ...options}));

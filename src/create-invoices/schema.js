@@ -13,8 +13,7 @@ const defaultParams = {
     firstNumber: 1,
     lastNumber: 100,
     minDate: new Date(now.getFullYear(), now.getMonth(), 1),
-    maxDate: new Date(now.getFullYear(), now.getMonth() + 1, 0),
-    serie: 'ABC-001'
+    maxDate: new Date(now.getFullYear(), now.getMonth() + 1, 0)
 }
 
 
@@ -24,8 +23,7 @@ const isValid = (options) => {
         firstNumber: options.firstNumber || defaultParams.firstNumber,
         lastNumber: options.lastNumber || defaultParams.lastNumber,
         minDate: options.minDate || defaultParams.minDate.toISOString(),
-        maxDate: options.maxDate || defaultParams.maxDate.toISOString(),
-        serie: options.serie || defaultParams.serie
+        maxDate: options.maxDate || defaultParams.maxDate.toISOString()
     }
     
     return Joi.validate(params, schema, (err, values) => {

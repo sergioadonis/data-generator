@@ -51,7 +51,6 @@ Options:
  * -l, --lastNumber <lastNumber>    The last number
  * -m, --minDate <minDate>          The minimun date
  * -M, --maxDate <maxDate>          The maximun date
- * -s, --serie <serie>              The serie
  * -h, --help                       output usage information
   
 #### Examples
@@ -63,11 +62,11 @@ Generates a file with [filename] from 100 to 999 numbers.
 ```bash
 data-generator ci [filename] -f 100 -l 999
 ```
-Generates a file with [filename] from _100_ to _999_ numbers and _SDC001_ as serie.
+Generates a file with [filename] from _100_ to _999_ numbers.
 ```bash
-data-generator ci [filename] -f 100 -l 999 --serie 'SDC001'
+data-generator ci [filename] -f 100 -l 999
 ```
-Generates a file with [filename] from _100_ to _999_ numbers, between _2019-06-01_ and _2019-06-30_ and _SDC001_ as serie.
+Generates a file with [filename] from _100_ to _999_ numbers, between _2019-06-01_ and _2019-06-30_.
 ```bash
-data-generator ci [filename] -f 100 -l 999 -m '2019-06-01' -M '2019-06-30' --serie 'SDC001'
+data-generator ci [filename] -f 100 -l 999 -m '2019-06-01' -M '2019-06-30'
 ```
