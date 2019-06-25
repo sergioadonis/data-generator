@@ -3,18 +3,18 @@ const program = require("commander");
 const createInvoice = require("./create-invoices/action");
 
 
-program.version("0.0.1").description("My utils");
+program.version("0.0.1").description("CLI to generate random data files for development tests.");
 
 // Commands
 program
-    .command('create-invoices [fileName]')
+    .command('create-invoices [filename]')
     .option('-f, --firstNumber <firstNumber>', 'The first number')
     .option('-l, --lastNumber <lastNumber>', 'The last number')
     .option('-m, --minDate <minDate>', 'The minimun date')
     .option('-M, --maxDate <maxDate>', 'The maximun date')
     .option('-s, --serie <serie>', 'The serie')
     .alias('ci')
-    .description('Create invoices')
-    .action((fileName, options) => createInvoice({fileName, ...options}));
+    .description('Create invoices to filename in CSV format. Default filename is invoices-data.csv')
+    .action((filename, options) => createInvoice({filename, ...options}));
     
 program.parse(process.argv);
