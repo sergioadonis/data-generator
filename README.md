@@ -37,7 +37,7 @@ Or shorter using _ci_ alias
 ```bash
 data-generator ci
 ```
-Both cases generate a file with _data-invoices.csv_ as default name
+Both cases generate a file with _invoices-data.csv_ as default name
 
 #### Specifying a filename
 Specifying a filename to store data generated
