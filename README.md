@@ -47,12 +47,12 @@ data-generator ci [filename]
 
 #### Aditional options
 Options:
-  -f, --firstNumber <firstNumber>  The first number
-  -l, --lastNumber <lastNumber>    The last number
-  -m, --minDate <minDate>          The minimun date
-  -M, --maxDate <maxDate>          The maximun date
-  -s, --serie <serie>              The serie
-  -h, --help                       output usage information
+ * -f, --firstNumber <firstNumber>  The first number
+ * -l, --lastNumber <lastNumber>    The last number
+ * -m, --minDate <minDate>          The minimun date
+ * -M, --maxDate <maxDate>          The maximun date
+ * -s, --serie <serie>              The serie
+ * -h, --help                       output usage information
   
 #### Examples
 Generates a file with defaul name from _1_ to _100_ numbers.
