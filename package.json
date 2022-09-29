@@ -15,7 +15,7 @@
   "author": "Sergio Adonis",
   "license": "ISC",
   "dependencies": {
-    "@hapi/joi": "^15.0.3",
+    "@hapi/joi": "^15.1.1",
     "commander": "^2.20.0",
     "json2csv": "^4.5.1",
     "moment": "^2.24.0"
